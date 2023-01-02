@@ -75,7 +75,7 @@ body{
 
 .food{
 
-    background-image: url(./apple.png);
+    background-image: url('./apple.png');
     background-position: center center;
     min-height: 100%;
     background-size: cover;
