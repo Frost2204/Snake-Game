@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/pop.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <title>The Classic Snalke Game</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <div id="mya">
+        <!-- <img src="/myid.jpg" class="avatar" onclick="openinfo()"> -->
+        <button onclick=" popsound(),openinfo()" class="avatar" title="ABOUT">i</button>
+        <div id="info" class="info">
+            <div class="myinfo">
+                <div id="id"><img class="id" title="Go to my website" src="myid.jpg"></div>
+                <div class="word">
+                    <h1 class="word1">I'm Nikunj Ranjan</h1><br>
+                    <h2 class="word2">a Web Designer</h2>
+                </div>    
+            </div>
+            <div class="linkdiv">
+                <a href="https://www.facebook.com/profile.php?id=100008680326611"> <img class="link" title="Facebook" src="https://media.giphy.com/media/XEy1qyv7GdLpmqHEPV/giphy.gif"></a>
+                <a href="https://www.instagram.com/nikunj_ranjan_/"><img class="link" title="Instagram" src="https://media.giphy.com/media/3o7bu7wtT19WfBAt0Y/giphy.gif"></a>
+                <a href="https://www.linkedin.com/in/nikunj-ranjan-668696177/"><img class="link" title="Linkdin" src="https://cliply.co/wp-content/uploads/2021/02/372102050_LINKEDIN_ICON_400px.gif"></a>
+                <a href="https://github.com/Frost2204"><img class="link" title="GitHub" src="https://camo.githubusercontent.com/0cad3f969b0946abd0e5f16e9ed1ff78a2495a40c2bb5c6414aefd4be76505aa/68747470733a2f2f692e67697068792e636f6d2f6d656469612f4b7a4a6b7a6a676766474e355079366e6b542f3230302e77656270"></a>
+            </div>
+            <button class="bn632-hover bn23 close" onclick="btnpress(), closeinfo()">Close</button>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <h1 class="popmess">Game Over</h1>
+        <h2 id="fs">Your Score :0</h2>
+        <h2 id="fhs"></h2>
+        <button type="button" class="bn632-hover bn23" onclick="closePopup() , btnpress()">Restart</button>
+        <div class="radiobutton">
+                    <h2 class="word1">Select difficulty&hellip;</h2>
+                    <section>
+                    <div>
+                    <input type="radio" id="control_01" name="select" value="1" onclick="difficult(1)">
+                    <label for="control_01" class="h">
+                        <h2>Pfft</h2>
+                        <p>Awww, poor baby. Too afraid of the scary game sprites? I laugh at you.<br>👶</p>
+                    </label>
+                    </div>
+                    <div>
+                    <input type="radio" id="control_02" name="select" value="2" checked="checked"  onclick="difficult(2)">
+                    <label for="control_02" class="h">
+                        <h2>Wannabe</h2>
+                        <p>You're not a gaming God by any stretch of the imagination. <br> 😎</p>
+                    </label>
+                    </div>
+                    <div>
+                    <input type="radio" id="control_03" name="select" value="3" onclick="difficult(3)">
+                    <label for="control_03" class="h">
+                        <h2>Daaamn</h2>
+                        <p>Now we're talking. It's gettin' a bit hairy out there in game land.<br>😲</p>
+                    </label>
+                    </div>
+                    <div>
+                    <input type="radio" id="control_05" name="select" value="5" onclick="difficult(4)">
+                    <label for="control_05" class="h">
+                        <h2>Suicidal</h2>
+                        <p>You will not live. Strap in and write a heart-felt letter to your loved ones.<br>😈</p>
+                    </label>
+                    </div>
+                    </section>
+        </div>
+    </div>
+    <div class="left-display">
+        <h1 class="st">Score</h1>
+        <h1 id="scoreBox"></h1>
+    </div>
+    <div>
+        <div id="board"></div>
+    </div> 
+    <div>
+        <h1 class="hst">High Score</h1>
+        <H2 id="hiscoreBox"></H1>
+    </div>
+
+<!-- fireworks below-->
+<div id="fireworks" class="fireworks">
+    <div class="leftfire">
+        <div class="fire1">
+            <img src="./firework/giphy (1).gif">
+        </div>
+        <div class="fire2">
+            <img src="./firework/giphy (2).gif" alt="">
+        </div>
+    </div>
+    <div class="rightfire">
+        <div class="fire3">
+            <img src="./firework/giphy (3).gif" alt="">
+        </div>
+        <div class="fire4">
+            <img src="./firework/giphy.gif" alt="">
+        </div>
+    </div>
+</div>
+
+<script src="/logic.js"></script>
+</body>
+</html>

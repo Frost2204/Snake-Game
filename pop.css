@@ -1,0 +1,140 @@
+/* 
+.popmess{
+    
+} */
+/* ------------------------------------------------- */
+.popup{
+    width: 900px;
+    height: 600px;
+    background-color: #CBEDD5;
+    /* background: linear-gradient(#9ecce9,#d9ea5b); */
+
+    border-radius: 24px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #00920f;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-pop{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn23 {
+    background-image: linear-gradient(
+      to right,
+      #171ff6,
+      #d9e021,
+      #009245,
+      #fcee21
+    );
+    box-shadow: 0 4px 15px 0 rgba(83, 176, 57, 0.75);
+  }
+
+  /*  ==================*/
+  
+section {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  section > div {
+    flex: 1;
+    padding: 0.5rem;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  label {
+    height: 100%;
+    display: block;
+    background: white;
+    border: 2px solid rgb(32, 70, 223);
+    border-radius: 20px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 0px 3px 10px -2px hsla(150, 5%, 65%, 0.5);
+    position: relative;
+  }
+  input[type="radio"]:checked + label {
+    background:linear-gradient(#171ff6,#d9e021);
+    color: hsla(215, 0%, 100%, 1);
+    border: 2px solid rgb(194, 223, 32);
+    box-shadow: 0px 0px 20px hsla(70, 100%, 50%, 0.75);
+    
+  }
+  input[type="radio"]#control_05:checked + label {
+    background: linear-gradient(#f61717,#000000);
+    border-color: red;
+  }
+  p {
+    font-weight: 900;
+  }
+
+  .h:hover{
+    transform: scale(1.03);
+    box-shadow: 0px 0px 20px hsla(232, 98%, 65%, 0.75);
+  }
+  
+  
+  @media only screen and (max-width: 700px) {
+    section {
+      flex-direction: column;
+    }
+  }
+  
+
+html
+{
+  overflow: hidden;
+}
+
+
+.radiobutton{
+  border-radius: 2px;
+  border: 2px #3540b4 solid;
+  border-radius: 25px;
+  padding-bottom: 65px;
+}
